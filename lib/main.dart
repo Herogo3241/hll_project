@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import './Components/homepage.dart';
+import 'package:hll_project/Components/communitypage.dart';
+import 'package:hll_project/Components/homepage.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Waste Management App'),
+      home: const CommunityPage()
     );
   }
 }
