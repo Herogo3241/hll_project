@@ -20,10 +20,36 @@ class _PostCreationState extends State<PostCreation> {
             onPressed: _exitPostCreation, icon: const Icon(Icons.clear)),
         actions: [
           Container(
-              margin: EdgeInsets.all(8),
+              margin: const EdgeInsets.all(8),
               child:
                   ElevatedButton(onPressed: () {}, child: const Text('Post')))
         ],
+      ),
+      body: const Padding(
+        padding: EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            TextField(
+              decoration: InputDecoration(
+                hintText: 'Title',
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            TextField(
+              maxLines: 20,
+              decoration: InputDecoration(
+                border: InputBorder.none,
+              ),
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        tooltip: 'Add Image',
+        child: const Icon(Icons.image),
       ),
     );
   }
