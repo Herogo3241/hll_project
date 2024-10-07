@@ -18,7 +18,7 @@ class _LoginPageState extends State<LoginPage> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('SIGN IN'),
+          // title: const Text('SIGN IN'),
         ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),

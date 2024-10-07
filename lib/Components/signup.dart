@@ -24,7 +24,7 @@ class _SignUpPageState extends State<SignUpPage> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('SIGN UP'),
+          // title: const Text('SIGN UP'),
         ),
         body: Center(
           child: SingleChildScrollView(

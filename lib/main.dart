@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hll_project/Components/communitypage.dart';
+import 'package:hll_project/Components/loginpage.dart';
+import 'package:hll_project/Components/signup.dart';
 
 
 
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent),
         useMaterial3: true,
       ),
       home: const CommunityPage()
